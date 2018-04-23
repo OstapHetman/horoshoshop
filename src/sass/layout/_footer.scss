@@ -1,0 +1,108 @@
+footer {
+    .footer__item {
+        &.footer__item__links-col .links {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #cecece;
+                left: 10%;
+                top: 0;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #cecece;
+                right: 10%;
+                top: 0;
+            }
+        }
+        h4 {
+            font-family: 'Museo2';
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: -1.04px;
+            padding-bottom: 30px;
+        }
+        .footer__item__icons {
+            img {
+                max-width: 63px;
+                height: auto;
+                padding-bottom: 32px;
+            }
+        }
+        .footer__item__phones {
+            a {
+                font-family: 'Museo2';
+                color: #00a7ff;
+                font-size: 26px;
+                font-weight: 400;
+                letter-spacing: -1.04px;
+            }
+        }
+        .footer__item__location {
+            p {
+                padding-top: 15px;
+                color: #979696;
+                font-family: "Museo2";
+                font-size: 26px;
+                font-weight: 400;
+                letter-spacing: -1.04px;
+            }
+        }
+        .links {
+            ul {
+                li {
+                    a {
+                        font-family: 'Museo1';
+                        color: #000000;
+                        font-size: 23px;
+                        font-weight: 400;
+                        letter-spacing: -0.92px;
+                    }
+                }
+            }
+        }
+        .feedback {
+            a:first-child {
+                border-radius: 28px;
+                color: #fff;
+                font-family: "Museo1";
+                font-size: 21px;
+                font-weight: 400;
+                letter-spacing: -1px;
+                background-color: #0476b3;
+                max-width: 215px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            a:last-child {
+                border-radius: 28px;
+                color: #fff;
+                font-family: "Museo1";
+                font-size: 21px;
+                font-weight: 400;
+                letter-spacing: -1px;
+                background-color: #019aeb;
+                margin-top: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .footer__bottom-part {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        p {
+            font-family: 'Museo1';
+            color: #b9b6b6;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: -0.92px;
+        }
+    }
+}
