@@ -1,1 +1,33 @@
-#features {}
+$head-text-color:#00a7ff;
+#features {
+    margin-top: 125px;
+    .features__head-text {
+        h2 {
+            font-family: "Museo2";
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: -1.6px;
+            color: $head-text-color;
+        }
+    }
+    .features__item {
+        margin-top: 58px;
+        .features__item__img {
+            padding-bottom: 30px;
+            min-height: 160px;
+            display: flex;
+            align-items: flex-end;
+        }
+        p {
+            font-family: 'Museo0'; // Sans Cyrl -300
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.6px;
+            color: #000;
+            max-width: 70%;
+            display: block;
+            margin: auto;
+        }
+    }
+}

@@ -18,11 +18,106 @@
   font-family: "MuseoSansCyrl";
   src: url("../fonts/MuseoSans/MuseoSansCyrl.otf") format("truetype"); }
 
-nav.navbar ul.navbar-nav li a {
-  color: #000; }
+nav.navbar {
+  box-shadow: 0 5px 5px -5px #eeebeb;
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
+  background-color: #fff; }
+  nav.navbar .navbar-brand {
+    color: #1498dd;
+    font-size: 31px;
+    font-family: 'Museo3'; }
+  nav.navbar .nav__get-call .phone-number {
+    color: #1498dd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400; }
+    nav.navbar .nav__get-call .phone-number img {
+      padding-right: 6px; }
+  nav.navbar ul.navbar-nav li a {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Museo1';
+    font-weight: 400; }
 
 header {
-  margin-top: 50px; }
+  margin-top: 85px; }
+  header .header__showcase-text {
+    padding-top: 160px; }
+    header .header__showcase-text h1 {
+      color: #00a7ff;
+      font-family: 'Museo2';
+      font-weight: 400;
+      font-size: 49px;
+      letter-spacing: -2px; }
+    header .header__showcase-text p {
+      font-family: 'Museo0';
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: -0.88px;
+      color: #000;
+      padding-top: 60px; }
+    header .header__showcase-text a {
+      margin-top: 75px; }
+  header .header__img {
+    padding-top: 130px; }
+
+#features {
+  margin-top: 125px; }
+  #features .features__head-text h2 {
+    font-family: "Museo2";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -1.6px;
+    color: #00a7ff; }
+  #features .features__item {
+    margin-top: 58px; }
+    #features .features__item .features__item__img {
+      padding-bottom: 30px;
+      min-height: 160px;
+      display: flex;
+      align-items: flex-end; }
+    #features .features__item p {
+      font-family: 'Museo0';
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.6px;
+      color: #000;
+      max-width: 70%;
+      display: block;
+      margin: auto; }
+
+#about {
+  margin-top: 85px; }
+  #about .about__left a {
+    font-family: 'Museo1';
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.88px;
+    color: #32567a;
+    text-decoration: underline;
+    padding-top: 30px; }
+  #about .about__right {
+    font-family: 'Open Sans', sans-serif;
+    color: #000; }
+    #about .about__right h3,
+    #about .about__right h4 {
+      font-weight: 400;
+      margin-bottom: 0; }
+    #about .about__right h3 {
+      font-size: 39px; }
+    #about .about__right h4 {
+      font-size: 24px; }
+    #about .about__right p,
+    #about .about__right ul {
+      font-size: 15px;
+      font-weight: 400;
+      padding-top: 15px;
+      margin-bottom: 0; }
+    #about .about__right ul li {
+      font-weight: bold; }
 
 body {
   max-width: 1920px !important;

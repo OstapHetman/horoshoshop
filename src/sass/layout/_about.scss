@@ -1,0 +1,42 @@
+$text-for-modal-color: #32567a;
+#about {
+    margin-top: 85px;
+    .about__left {
+        a {
+            font-family: 'Museo1';
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: -0.88px;
+            color: $text-for-modal-color;
+            text-decoration: underline;
+            padding-top: 30px;
+        }
+    }
+    .about__right {
+        font-family: 'Open Sans', sans-serif;
+        color: #000;
+        h3,
+        h4 {
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-size: 39px;
+        }
+        h4 {
+            font-size: 24px;
+        }
+        p,
+        ul {
+            font-size: 15px;
+            font-weight: 400;
+            padding-top: 15px;
+            margin-bottom: 0;
+        }
+        ul {
+            li {
+                font-weight: bold;
+            }
+        }
+    }
+}

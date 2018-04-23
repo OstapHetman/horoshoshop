@@ -1,8 +1,33 @@
+$brand-color:#1498dd;
+$box-shadow-color: #eeebeb;
 nav.navbar {
+    box-shadow: 0 5px 5px -5px $box-shadow-color;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    background-color: #fff;
+    .navbar-brand {
+        color: $brand-color;
+        font-size: 31px;
+        font-family: 'Museo3';
+    }
+    .nav__get-call {
+        .phone-number {
+            color: $brand-color;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            img {
+                padding-right: 6px;
+            }
+        }
+    }
     ul.navbar-nav {
         li {
             a {
                 color: #000;
+                font-size: 16px;
+                font-family: 'Museo1';
+                font-weight: 400;
             }
         }
     }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ХОРОШОШОП</title>
+    <title>ХОРОШОП</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,6 +16,8 @@
     <!-- FavIcon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,12 +26,12 @@
 
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">ХОРОШОШОП</a>
+            <a class="navbar-brand" href="#">ХОРОШОП</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
+                <ul class="pl-3 navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Главная</a>
                     </li>
@@ -46,9 +48,9 @@
                         <a class="nav-link" href="#">Контакты</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto nav__get-call">
                     <li class="nav-item">
-                        <a class="nav-link" href="tel:+38 (067) 637-03-27"><img src="img/phone-icon.png" alt="Phone">+38 (067) 637-03-27</a>
+                        <a class="nav-link phone-number d-flex align-items-center" href="tel:+38 (067) 637-03-27"><img src="img/phone-icon.png" alt="Phone">+38 (067) 637-03-27</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-primary nav-link" href="#">Заказать двзонок</a>
@@ -73,7 +75,9 @@
                     <img class="w-100" src="img/macbook.png" alt="Macbook">
                 </div>
                 <div class="col-1 mx-auto header__icon">
-                    <img class="d-block mx-auto" src="img/mouse-icon.png" alt="Mouse">
+                    <a href="#about">
+                        <img class="d-block mx-auto" src="img/mouse-icon.png" alt="Mouse">
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,7 +88,7 @@
     <section id="features">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mx-auto features__head-text">
+                <div class="col-lg-7 mx-auto features__head-text">
                     <h2 class="text-center">Запуск продающего интернет - магазина в кратчайшие сроки</h2>
                 </div>
             </div>
