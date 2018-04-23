@@ -21,6 +21,12 @@ header {
         }
         a {
             margin-top: 75px;
+            @include gradient-btn-animation;
+            font-family: 'Museo1';
+            font-size: 25px;
+            border-radius: 35px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
     .header__img {
