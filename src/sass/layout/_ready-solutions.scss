@@ -1,0 +1,31 @@
+#ready-solutions {
+    margin-top: 53px;
+    color: #000;
+    h3 {
+        font-family: 'Museo2';
+        font-size: 40px;
+        letter-spacing: -1.6px;
+    }
+    .solutions__list {
+        margin-top: 70px;
+        font-family: 'Open Sans', sans-serif;
+        h5 {
+            font-size: 25px;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+        ul {
+            li {
+                font-size: 15px;
+                letter-spacing: -0.6px;
+                padding-bottom: 15px;
+                &:last-child {
+                    padding-bottom: unset;
+                }
+                img {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

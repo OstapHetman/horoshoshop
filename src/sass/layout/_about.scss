@@ -1,6 +1,10 @@
 $text-for-modal-color: #32567a;
+$bg-color: #f9f9f9;
 #about {
     margin-top: 85px;
+    background-color: $bg-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
     .about__left {
         a {
             font-family: 'Museo1';
@@ -9,12 +13,12 @@ $text-for-modal-color: #32567a;
             letter-spacing: -0.88px;
             color: $text-for-modal-color;
             text-decoration: underline;
-            padding-top: 30px;
         }
     }
     .about__right {
         font-family: 'Open Sans', sans-serif;
         color: #000;
+        padding-top: 35px;
         h3,
         h4 {
             font-weight: 400;
