@@ -1,6 +1,9 @@
 $primary-text-color: #00a7ff;
 header {
     margin-top: 85px;
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+    background-position: center;
     .header__showcase-text {
         padding-top: 160px;
         h1 {

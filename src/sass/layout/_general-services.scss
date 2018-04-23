@@ -1,0 +1,60 @@
+#general-services {
+    margin-top: 95px;
+    .services__title-text {
+        h4 {
+            font-family: 'Museo2';
+            font-size: 40px;
+            color: #000;
+            letter-spacing: -1.6px;
+            margin-bottom: 0;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 6px;
+                background-color: #00a7ff;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .service__item {
+        max-width: 260px;
+        box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
+        border: 1px solid #efeded;
+        margin-top: 75px;
+        h4 {
+            font-family: 'Museo0'; // Sans Cyrl -300
+            font-size: 21px;
+            color: #000;
+            letter-spacing: -0.84px;
+            margin-bottom: 0;
+            padding-bottom: 25px;
+            position: relative;
+        }
+        img {
+            padding-bottom: 28px;
+        }
+        a.btn {
+            color: #ffffff;
+            font-family: "Museo1";
+            font-size: 21px;
+            font-weight: 400;
+            max-width: 215px;
+            border-radius: 28px;
+            background-color: #00a7ff;
+            letter-spacing: -1px;
+        }
+    }
+    .service__more-btn {
+        margin-top: 45px;
+        a {
+            @include gradient-btn-animation;
+            font-family: "Museo1";
+            font-size: 20px;
+            letter-spacing: -0.8px;
+            color: #e2e1e1;
+            border-radius: 35px;
+        }
+    }
+}
