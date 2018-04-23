@@ -354,6 +354,91 @@ header {
   100% {
     background-position: 0% 50%; } }
 
+#services-for-clients {
+  margin-top: 95px; }
+  #services-for-clients .services__title-text h4 {
+    font-family: 'Museo2';
+    font-size: 40px;
+    color: #000;
+    letter-spacing: -1.6px;
+    margin-bottom: 0; }
+    #services-for-clients .services__title-text h4:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 6px;
+      background-color: #00a7ff;
+      left: 0;
+      top: 0; }
+  #services-for-clients .service__item {
+    max-width: 260px;
+    box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
+    border: 1px solid #efeded;
+    margin-top: 75px; }
+    #services-for-clients .service__item h4 {
+      font-family: 'Museo0';
+      font-size: 21px;
+      color: #000;
+      letter-spacing: -0.84px;
+      margin-bottom: 0;
+      padding-bottom: 25px;
+      position: relative; }
+    #services-for-clients .service__item img {
+      padding-bottom: 28px; }
+    #services-for-clients .service__item a.btn {
+      color: #ffffff;
+      font-family: "Museo1";
+      font-size: 21px;
+      font-weight: 400;
+      max-width: 215px;
+      border-radius: 28px;
+      background-color: #00a7ff;
+      letter-spacing: -1px; }
+  #services-for-clients .service__more-btn {
+    margin-top: 45px;
+    margin-bottom: 60px; }
+    #services-for-clients .service__more-btn a {
+      font-family: "Open Sans", sans-serif;
+      background: #3c7ac2;
+      background: linear-gradient(to right, #109de1, #3c7ac2);
+      color: #fff;
+      font-size: 14px;
+      border-radius: 5px;
+      border: unset;
+      background-size: 400% 400%;
+      -webkit-animation: Gradient 3s ease infinite;
+      -moz-animation: Gradient 3s ease infinite;
+      animation: Gradient 3s ease infinite;
+      font-family: "Museo1";
+      font-size: 20px;
+      letter-spacing: -0.8px;
+      color: #e2e1e1;
+      border-radius: 35px; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 body {
   max-width: 1920px !important;
   margin: auto !important; }
