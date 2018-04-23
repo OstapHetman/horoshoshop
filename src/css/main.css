@@ -273,7 +273,8 @@ header {
     background-position: 0% 50%; } }
 
 #general-services {
-  margin-top: 95px; }
+  padding-top: 95px;
+  background-color: #f9f9f9; }
   #general-services .services__title-text h4 {
     font-family: 'Museo2';
     font-size: 40px;
@@ -357,7 +358,8 @@ header {
     background-position: 0% 50%; } }
 
 #services-for-clients {
-  margin-top: 95px; }
+  padding-top: 95px;
+  background-color: #f9f9f9; }
   #services-for-clients .services__title-text h4 {
     font-family: 'Museo2';
     font-size: 40px;
@@ -442,8 +444,9 @@ header {
     background-position: 0% 50%; } }
 
 #ready-solutions {
-  margin-top: 53px;
-  color: #000; }
+  padding-top: 53px;
+  color: #000;
+  background-color: #f9f9f9; }
   #ready-solutions h3 {
     font-family: 'Museo2';
     font-size: 40px;
@@ -463,6 +466,47 @@ header {
         padding-bottom: unset; }
       #ready-solutions .solutions__list ul li img {
         padding-right: 10px; }
+
+#our-blog .our-blog__text {
+  margin-top: 85px; }
+  #our-blog .our-blog__text h4 {
+    font-family: 'Museo2';
+    font-size: 40px;
+    color: #000;
+    letter-spacing: -1.6px;
+    margin-bottom: 0; }
+    #our-blog .our-blog__text h4:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 6px;
+      background-color: #00a7ff;
+      left: 0;
+      top: 0; }
+
+#our-blog .our-blog__item {
+  margin-top: 78px; }
+  #our-blog .our-blog__item .our-blog__post h5 {
+    font-family: 'Museo1';
+    font-size: 21px;
+    padding-top: 20px;
+    letter-spacing: -0.84px;
+    font-weight: bold; }
+  #our-blog .our-blog__item .our-blog__post p {
+    font-family: 'Museo0';
+    font-size: 16px; }
+
+#our-blog .go-to-blog-btn {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  #our-blog .go-to-blog-btn a {
+    color: #ffffff;
+    font-family: "Museo1";
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    border-radius: 28px;
+    background-color: #00a7ff; }
 
 body {
   max-width: 1920px !important;

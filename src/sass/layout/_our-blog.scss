@@ -1,0 +1,50 @@
+#our-blog {
+    .our-blog__text {
+        margin-top: 85px;
+        h4 {
+            font-family: 'Museo2';
+            font-size: 40px;
+            color: #000;
+            letter-spacing: -1.6px;
+            margin-bottom: 0;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 6px;
+                background-color: #00a7ff;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .our-blog__item {
+        margin-top: 78px;
+        .our-blog__post {
+            h5 {
+                font-family: 'Museo1';
+                font-size: 21px;
+                padding-top: 20px;
+                letter-spacing: -0.84px;
+                font-weight: bold;
+            }
+            p {
+                font-family: 'Museo0';
+                font-size: 16px;
+            }
+        }
+    }
+    .go-to-blog-btn {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        a {
+            color: #ffffff;
+            font-family: "Museo1";
+            font-size: 21px;
+            font-weight: 400;
+            letter-spacing: -1px;
+            border-radius: 28px;
+            background-color: #00a7ff;
+        }
+    }
+}
