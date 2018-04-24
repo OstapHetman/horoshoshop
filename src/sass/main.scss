@@ -8,6 +8,7 @@
 // ======================= //
 // ===== Components Folder====== //
 @import 'components/_buttons';
+@import 'components/_scrollTop';
 // ===== Layout Folder====== //
 @import 'layout/_navigation';
 @import 'layout/_header';
@@ -22,6 +23,7 @@
 // ======================= //
 // ===== Pages Folder====== //
 @import 'pages/_home';
+@import 'pages/_blog';
 // ======================= //
 body {
     max-width: 1920px !important;

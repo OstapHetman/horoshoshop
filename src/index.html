@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ХОРОШОП</title>
+    <title>Go In Lab</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Main Style-->
     <link rel="stylesheet" href="css/main.css">
     <!-- Latest compiled and minified FontAwesome -->
@@ -26,7 +27,7 @@
 
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">ХОРОШОП</a>
+            <a class="navbar-brand" href="index.html">Go In Lab</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +43,7 @@
                         <a class="nav-link" href="#">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Блог</a>
+                        <a class="nav-link" href="blog.html">Блог</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Контакты</a>
@@ -62,8 +63,10 @@
 
     <!-- End Fixed Navbar -->
 
+
+
     <!-- Start Header -->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 header__showcase-text">
@@ -71,15 +74,18 @@
                     <p>Налаживаем работу и развиваем интернет магазин с нуля. Мы предлагаем готовые решения для старта интернет магазина и высоких продаж уже с первых месяцев его работы</p>
                     <a href="#" class="btn btn-primary">Начни продавать в интернете уже сегодня!</a>
                 </div>
-                <div class="col-lg-5 header__img">
-                    <img class="w-100" src="img/macbook.png" alt="Macbook">
-                </div>
+            </div>
+            <div class="header__img">
+                <img src="img/macbook.png" alt="Macbook">
+            </div>
+            <div class="row py-5">
                 <div class="col-1 mx-auto header__icon">
-                    <a href="#about">
-                        <img class="d-block mx-auto" src="img/mouse-icon.png" alt="Mouse">
+                    <a href="#features">
+                        <img data-wow-duration="1.5s" data-wow-iteration="100" class="d-block mx-auto wow slideInDown" src="img/mouse-icon.png" alt="Mouse">
                     </a>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <!-- End Header -->
@@ -93,7 +99,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow slideInLeft">
                     <div class="text-center features__item">
                         <div class="features__item__img">
                             <img class="d-block mx-auto" src="img/cog.png" alt="Features Icon">
@@ -101,7 +107,7 @@
                         <p>Готовый сайт. Правильная структура каталога сайта с контентом и товарами</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow slideInLeft">
                     <div class="text-center features__item">
                         <div class="features__item__img">
                             <img class="d-block mx-auto" src="img/users.png" alt="Features Icon">
@@ -109,7 +115,7 @@
                         <p>Работа с подрядчиками. Налаженная работа, четко сформулированные задачи и план развития</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow slideInLeft">
                     <div class="text-center features__item">
                         <div class="features__item__img">
                             <img class="d-block mx-auto" src="img/feedback.png" alt="Features Icon">
@@ -179,53 +185,76 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item__col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item__col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item__col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item__col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item__col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item__col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
+                    </div>
+                </div>
+                <!-- Hide blocks -->
+                <div class="col-lg-4 service__item__col">
+                    <div class="service__item py-4 mx-auto text-center">
+                        <h4>Создание интернет - магазина с нуля</h4>
+                        <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 service__item__col">
+                    <div class="service__item py-4 mx-auto text-center">
+                        <h4>Создание интернет - магазина с нуля</h4>
+                        <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 service__item__col">
+                    <div class="service__item py-4 mx-auto text-center">
+                        <h4>Создание интернет - магазина с нуля</h4>
+                        <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-2 mx-auto service__more-btn">
-                    <a href="#" class="btn d-block mx-auto">
+                    <a href="#" class="btn mx-auto view-more">
                         Показать еще
+                        <img src="img/loader.png" alt="">
                     </a>
                 </div>
             </div>
@@ -242,53 +271,54 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item-clients-col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item-clients-col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item-clients-col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item-clients-col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item-clients-col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 service__item-clients-col">
                     <div class="service__item py-4 mx-auto text-center">
                         <h4>Создание интернет - магазина с нуля</h4>
                         <img clas="w-100" src="img/shopping-icon.png" alt="Services Item">
-                        <a href="#" class="btn d-block mx-auto">Узнать подробнее</a>
+                        <a href="#" class="btn d-block mx-auto js-hover">Узнать подробнее</a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-2 mx-auto service__more-btn">
-                    <a href="#" class="btn d-block mx-auto">
+                    <a href="#" class="btn view-more-g mx-auto">
                         Показать еще
+                        <img src="img/loader.png" alt="">
                     </a>
                 </div>
             </div>
@@ -331,6 +361,22 @@
                     </ul>
                 </div>
             </div>
+            <div class="row py-5">
+                <div class="col-12 get-question">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <img src="img/question.png" alt="bubble">
+                            <p class="mb-0">Желаете узнать, какой тариф вам подходит? Оставьте заявку, и мы с Вами свяжемся!</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <form>
+                                <input type="text" class="form-control ml-auto" placeholder="+380 ">
+                                <input type="submit" class="form-control" value="Узнать">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End Section: Ready Solutions -->
@@ -345,26 +391,33 @@
             </div>
             <div class="row ">
                 <div class="col-lg-4 our-blog__item">
-                    <div class="our-blog__post">
-                        <img class="w-100" src="img/blog-cover.png" alt="Blog Cover">
-                        <h5>Переехали на Хорошоп и уве- личили трафик в 4 раза</h5>
-                        <p>16 апреля 2018</p>
-                    </div>
+                    <a href="#">
+                        <div class="our-blog__post">
+                            <img class="w-100" src="img/blog-cover.png" alt="Blog Cover">
+                            <h5>Переехали на Хорошоп и уве- личили трафик в 4 раза</h5>
+                            <p>16 апреля 2018</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 our-blog__item">
-                    <div class="our-blog__post">
-                        <img class="w-100" src="img/blog-cover.png" alt="Blog Cover">
-                        <h5>Переехали на Хорошоп и уве- личили трафик в 4 раза</h5>
-                        <p>16 апреля 2018</p>
-                    </div>
+                    <a href="#">
+                        <div class="our-blog__post">
+                            <img class="w-100" src="img/blog-cover.png" alt="Blog Cover">
+                            <h5>Переехали на Хорошоп и уве- личили трафик в 4 раза</h5>
+                            <p>16 апреля 2018</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 our-blog__item">
-                    <div class="our-blog__post">
-                        <img class="w-100" src="img/blog-cover.png" alt="Blog Cover">
-                        <h5>Переехали на Хорошоп и уве- личили трафик в 4 раза</h5>
-                        <p>16 апреля 2018</p>
-                    </div>
+                    <a href="#">
+                        <div class="our-blog__post">
+                            <img class="w-100" src="img/blog-cover.png" alt="Blog Cover">
+                            <h5>Переехали на Хорошоп и уве- личили трафик в 4 раза</h5>
+                            <p>16 апреля 2018</p>
+                        </div>
+                    </a>
                 </div>
+
             </div>
             <div class="row">
                 <div class="col-3 mx-auto go-to-blog-btn">
@@ -382,12 +435,24 @@
                 <div class="col-lg-4 footer__item">
                     <div class="text-center">
                         <h4>Свяжитесь с нами прямо сейчас</h4>
-                        <div class="footer__item__icons d-flex align-items-center justify-content-between">
-                            <img class="d-block" src="img/facebook.png" alt="facebook">
-                            <img class="d-block" src="img/telegram.png" alt="telegram">
-                            <img class="d-block" src="img/viber.png" alt="viber">
-                            <img class="d-block" src="img/whatsapp.png" alt="whatsapp">
-                            <img class="d-block" src="img/instagram.png" alt="instagram">
+                        <div class="footer__item__icons ">
+                            <ul class="list-unstyled d-flex justify-content-between w-100">
+                                <li>
+                                    <a target="_blank" href="https://facebook.com"><img class="d-block" src="img/facebook.png" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://facebook.com"><img class="d-block" src="img/telegram.png" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://facebook.com"><img class="d-block" src="img/viber.png" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://facebook.com"><img class="d-block" src="img/whatsapp.png" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://facebook.com"><img class="d-block" src="img/instagram.png" alt="facebook"></a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="footer__item__phones ">
                             <a class="d-block" href="mailto:admin@mark-lab.biz">admin@mark-lab.biz</a>
@@ -426,11 +491,21 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- START SCROLL TOP BTN -->
+    <div class='scrolltop'>
+        <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+    </div>
+    <!-- END SCROLL TOP BTN -->
+
     <!-- Latest compiled and minified JQuery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <!-- Main JavaScript File -->
     <script src="js/main.js"></script>
 </body>

@@ -55,6 +55,40 @@
   100% {
     background-position: 0% 50%; } }
 
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px;
+  right: 10px; }
+  .scrolltop .scroll {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #019aeb;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; }
+    .scrolltop .scroll:hover {
+      background: #0476b3;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; }
+    .scrolltop .scroll .fa {
+      font-size: 30px;
+      color: white;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; }
+
 nav.navbar {
   box-shadow: 0 5px 5px -5px #eeebeb;
   padding-top: 14.5px;
@@ -84,7 +118,12 @@ header {
   margin-top: 85px;
   background-image: url(../img/header-bg.png);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
+  header .header__img {
+    position: absolute;
+    top: 0;
+    right: 0; }
   header .header__showcase-text {
     padding-top: 160px; }
     header .header__showcase-text h1 {
@@ -275,6 +314,8 @@ header {
 #general-services {
   padding-top: 95px;
   background-color: #f9f9f9; }
+  #general-services .service__item__col:nth-child(n+7) {
+    display: none; }
   #general-services .services__title-text h4 {
     font-family: 'Museo2';
     font-size: 40px;
@@ -294,6 +335,10 @@ header {
     box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
     border: 1px solid #efeded;
     margin-top: 75px; }
+    #general-services .service__item .js-hover:hover {
+      color: #fff;
+      border-radius: 28px;
+      background-color: #00a7ff; }
     #general-services .service__item h4 {
       font-family: 'Museo0';
       font-size: 21px;
@@ -305,13 +350,12 @@ header {
     #general-services .service__item img {
       padding-bottom: 28px; }
     #general-services .service__item a.btn {
-      color: #ffffff;
+      color: #00a7ff;
       font-family: "Museo1";
       font-size: 21px;
       font-weight: 400;
       max-width: 215px;
       border-radius: 28px;
-      background-color: #00a7ff;
       letter-spacing: -1px; }
   #general-services .service__more-btn {
     margin-top: 45px; }
@@ -331,7 +375,9 @@ header {
       font-size: 20px;
       letter-spacing: -0.8px;
       color: #e2e1e1;
-      border-radius: 35px; }
+      border-radius: 35px;
+      display: flex;
+      align-items: center; }
 
 @-webkit-keyframes Gradient {
   0% {
@@ -356,10 +402,14 @@ header {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+      #general-services .service__more-btn a img {
+        padding-left: 5px; }
 
 #services-for-clients {
   padding-top: 95px;
   background-color: #f9f9f9; }
+  #services-for-clients .service__item-clients-col:nth-child(n+4) {
+    display: none; }
   #services-for-clients .services__title-text h4 {
     font-family: 'Museo2';
     font-size: 40px;
@@ -379,6 +429,10 @@ header {
     box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
     border: 1px solid #efeded;
     margin-top: 75px; }
+    #services-for-clients .service__item .js-hover:hover {
+      color: #fff;
+      border-radius: 28px;
+      background-color: #00a7ff; }
     #services-for-clients .service__item h4 {
       font-family: 'Museo0';
       font-size: 21px;
@@ -390,13 +444,12 @@ header {
     #services-for-clients .service__item img {
       padding-bottom: 28px; }
     #services-for-clients .service__item a.btn {
-      color: #ffffff;
+      color: #00a7ff;
       font-family: "Museo1";
       font-size: 21px;
       font-weight: 400;
       max-width: 215px;
       border-radius: 28px;
-      background-color: #00a7ff;
       letter-spacing: -1px; }
   #services-for-clients .service__more-btn {
     margin-top: 45px;
@@ -417,7 +470,9 @@ header {
       font-size: 20px;
       letter-spacing: -0.8px;
       color: #e2e1e1;
-      border-radius: 35px; }
+      border-radius: 35px;
+      display: flex;
+      align-items: center; }
 
 @-webkit-keyframes Gradient {
   0% {
@@ -442,6 +497,8 @@ header {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+      #services-for-clients .service__more-btn a img {
+        padding-left: 5px; }
 
 #ready-solutions {
   padding-top: 53px;
@@ -466,6 +523,39 @@ header {
         padding-bottom: unset; }
       #ready-solutions .solutions__list ul li img {
         padding-right: 10px; }
+  #ready-solutions .get-question {
+    background-color: #00a7ff;
+    border-radius: 35px;
+    padding: 25px 25px; }
+    #ready-solutions .get-question p {
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 21px;
+      letter-spacing: -0.84px;
+      padding-left: 18px; }
+    #ready-solutions .get-question form {
+      position: relative; }
+      #ready-solutions .get-question form input {
+        border-radius: 35px;
+        font-family: 'Museo0';
+        color: #000;
+        font-weight: bold;
+        border: unset; }
+      #ready-solutions .get-question form input[type=submit] {
+        background-color: #eae8e8;
+        color: #000;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 115px;
+        padding: 15px 0px; }
+        #ready-solutions .get-question form input[type=submit]:hover {
+          cursor: pointer; }
+      #ready-solutions .get-question form input[type=text] {
+        max-width: 312px;
+        padding: 15px 20px; }
 
 #our-blog .our-blog__text {
   margin-top: 85px; }
@@ -486,6 +576,10 @@ header {
 
 #our-blog .our-blog__item {
   margin-top: 78px; }
+  #our-blog .our-blog__item a {
+    color: #000; }
+    #our-blog .our-blog__item a:hover {
+      text-decoration: unset; }
   #our-blog .our-blog__item .our-blog__post h5 {
     font-family: 'Museo1';
     font-size: 21px;
@@ -508,92 +602,132 @@ header {
     border-radius: 28px;
     background-color: #00a7ff; }
 
-footer .footer__item.footer__item__links-col .links {
-  position: relative; }
-  footer .footer__item.footer__item__links-col .links:before {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background-color: #cecece;
-    left: 10%;
-    top: 0; }
-  footer .footer__item.footer__item__links-col .links:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background-color: #cecece;
-    right: 10%;
-    top: 0; }
-
-footer .footer__item h4 {
-  font-family: 'Museo2';
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: -1.04px;
-  padding-bottom: 30px; }
-
-footer .footer__item .footer__item__icons img {
-  max-width: 63px;
-  height: auto;
-  padding-bottom: 32px; }
-
-footer .footer__item .footer__item__phones a {
-  font-family: 'Museo2';
-  color: #00a7ff;
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: -1.04px; }
-
-footer .footer__item .footer__item__location p {
-  padding-top: 15px;
-  color: #979696;
-  font-family: "Museo2";
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: -1.04px; }
-
-footer .footer__item .links ul li a {
-  font-family: 'Museo1';
-  color: #000000;
-  font-size: 23px;
-  font-weight: 400;
-  letter-spacing: -0.92px; }
-
-footer .footer__item .feedback a:first-child {
-  border-radius: 28px;
-  color: #fff;
-  font-family: "Museo1";
-  font-size: 21px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  background-color: #0476b3;
-  max-width: 215px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-footer .footer__item .feedback a:last-child {
-  border-radius: 28px;
-  color: #fff;
-  font-family: "Museo1";
-  font-size: 21px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  background-color: #019aeb;
-  margin-top: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-footer .footer__bottom-part {
+footer {
+  background-image: url(../img/footer-bg.png);
+  background-size: cover;
+  background-position: center;
   padding-top: 25px;
   padding-bottom: 25px; }
-  footer .footer__bottom-part p {
+  footer .footer__item.footer__item__links-col .links {
+    position: relative; }
+    footer .footer__item.footer__item__links-col .links:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #cecece;
+      left: 10%;
+      top: 0; }
+    footer .footer__item.footer__item__links-col .links:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #cecece;
+      right: 10%;
+      top: 0; }
+  footer .footer__item h4 {
+    font-family: 'Museo2';
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.04px;
+    padding-bottom: 30px; }
+  footer .footer__item .footer__item__icons img {
+    max-width: 63px;
+    height: auto;
+    padding-bottom: 32px; }
+  footer .footer__item .footer__item__phones a {
+    font-family: 'Museo2';
+    color: #00a7ff;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: -1.04px; }
+  footer .footer__item .footer__item__location p {
+    padding-top: 15px;
+    color: #979696;
+    font-family: "Museo2";
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: -1.04px; }
+  footer .footer__item .links ul li a {
     font-family: 'Museo1';
-    color: #b9b6b6;
-    font-size: 18px;
+    color: #000000;
+    font-size: 23px;
     font-weight: 400;
     letter-spacing: -0.92px; }
+  footer .footer__item .feedback a:first-child {
+    border-radius: 28px;
+    color: #fff;
+    font-family: "Museo1";
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    background-color: #0476b3;
+    max-width: 215px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  footer .footer__item .feedback a:last-child {
+    border-radius: 28px;
+    color: #fff;
+    font-family: "Museo1";
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    background-color: #019aeb;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  footer .footer__bottom-part {
+    padding-top: 25px; }
+    footer .footer__bottom-part p {
+      font-family: 'Museo1';
+      color: #b9b6b6;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: -0.92px; }
+
+main {
+  margin-top: 85px;
+  background-color: #f9f9f9;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  main .our-blog__text h4 {
+    font-family: 'Museo2';
+    font-size: 50px;
+    color: #000;
+    letter-spacing: -1.6px;
+    margin-bottom: 0; }
+    main .our-blog__text h4:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 6px;
+      background-color: #00a7ff;
+      left: 0;
+      top: 0; }
+  main .our-blog__item a {
+    color: #000; }
+    main .our-blog__item a:hover {
+      text-decoration: unset; }
+  main .our-blog__item .our-blog__post h5 {
+    font-family: 'Museo1';
+    font-size: 21px;
+    padding-top: 20px;
+    letter-spacing: -0.84px;
+    font-weight: bold; }
+  main .our-blog__item .our-blog__post p {
+    font-family: 'Museo0';
+    font-size: 16px; }
+  main .pagination li a {
+    font-family: 'Museo2';
+    color: #00a7ff;
+    border: unset;
+    font-size: 22px; }
+    main .pagination li a:hover {
+      background-color: unset;
+      color: #000; }
+    main .pagination li a.active {
+      text-decoration: underline; }
 
 body {
   max-width: 1920px !important;

@@ -1,4 +1,9 @@
 footer {
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
     .footer__item {
         &.footer__item__links-col .links {
             position: relative;
@@ -96,7 +101,6 @@ footer {
     }
     .footer__bottom-part {
         padding-top: 25px;
-        padding-bottom: 25px;
         p {
             font-family: 'Museo1';
             color: #b9b6b6;

@@ -29,4 +29,44 @@
             }
         }
     }
+    .get-question {
+        background-color: #00a7ff;
+        border-radius: 35px;
+        padding: 25px 25px;
+        p {
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 21px;
+            letter-spacing: -0.84px;
+            padding-left: 18px;
+        }
+        form {
+            position: relative;
+            input {
+                border-radius: 35px;
+                font-family: 'Museo0';
+                color: #000;
+                font-weight: bold;
+                border: unset;
+            }
+            input[type=submit] {
+                background-color: #eae8e8;
+                color: #000;
+                position: absolute;
+                right: 0;
+                top: 0;
+                max-width: 115px;
+                padding: 15px 0px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            input[type=text] {
+                max-width: 312px;
+                padding: 15px 20px;
+            }
+        }
+    }
 }

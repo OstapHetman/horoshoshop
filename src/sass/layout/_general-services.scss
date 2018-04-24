@@ -1,6 +1,9 @@
 #general-services {
     padding-top: 95px;
     background-color: $bg-color;
+    .service__item__col:nth-child(n+7) {
+        display: none;
+    }
     .services__title-text {
         h4 {
             font-family: 'Museo2';
@@ -24,6 +27,13 @@
         box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
         border: 1px solid #efeded;
         margin-top: 75px;
+        .js-hover {
+            &:hover {
+                color: #fff;
+                border-radius: 28px;
+                background-color: #00a7ff;
+            }
+        }
         h4 {
             font-family: 'Museo0'; // Sans Cyrl -300
             font-size: 21px;
@@ -37,13 +47,13 @@
             padding-bottom: 28px;
         }
         a.btn {
-            color: #ffffff;
+            color: #00a7ff;
             font-family: "Museo1";
             font-size: 21px;
             font-weight: 400;
             max-width: 215px;
             border-radius: 28px;
-            background-color: #00a7ff;
+            // background-color: #00a7ff;
             letter-spacing: -1px;
         }
     }
@@ -56,6 +66,11 @@
             letter-spacing: -0.8px;
             color: #e2e1e1;
             border-radius: 35px;
+            display: flex;
+            align-items: center;
+            img {
+                padding-left: 5px;
+            }
         }
     }
 }

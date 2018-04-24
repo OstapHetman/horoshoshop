@@ -1,9 +1,13 @@
-#our-blog {
+$bg-color: #f9f9f9;
+main {
+    margin-top: 85px;
+    background-color: $bg-color;
+    padding-top: 80px;
+    padding-bottom: 80px;
     .our-blog__text {
-        margin-top: 85px;
         h4 {
             font-family: 'Museo2';
-            font-size: 40px;
+            font-size: 50px;
             color: #000;
             letter-spacing: -1.6px;
             margin-bottom: 0;
@@ -19,7 +23,6 @@
         }
     }
     .our-blog__item {
-        margin-top: 78px;
         a {
             color: #000;
             &:hover {
@@ -40,17 +43,21 @@
             }
         }
     }
-    .go-to-blog-btn {
-        margin-top: 60px;
-        margin-bottom: 60px;
-        a {
-            color: #ffffff;
-            font-family: "Museo1";
-            font-size: 21px;
-            font-weight: 400;
-            letter-spacing: -1px;
-            border-radius: 28px;
-            background-color: #00a7ff;
+    .pagination {
+        li {
+            a {
+                font-family: 'Museo2';
+                color: #00a7ff;
+                border: unset;
+                font-size: 22px;
+                &:hover {
+                    background-color: unset;
+                    color: #000;
+                }
+                &.active {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
