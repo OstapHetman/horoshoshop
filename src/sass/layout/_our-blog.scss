@@ -44,6 +44,7 @@
         margin-top: 60px;
         margin-bottom: 60px;
         a {
+            @include gradient-btn-animation;
             color: #ffffff;
             font-family: "Museo1";
             font-size: 21px;
@@ -51,6 +52,20 @@
             letter-spacing: -1px;
             border-radius: 28px;
             background-color: #00a7ff;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #our-blog {
+        .our-blog__text {
+            h4 {
+                font-size: 28px;
+                text-align: center;
+                &:before {
+                    left: 30%;
+                }
+            }
         }
     }
 }

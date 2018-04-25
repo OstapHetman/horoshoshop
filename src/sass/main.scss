@@ -9,6 +9,7 @@
 // ===== Components Folder====== //
 @import 'components/_buttons';
 @import 'components/_scrollTop';
+@import 'components/_modals';
 // ===== Layout Folder====== //
 @import 'layout/_navigation';
 @import 'layout/_header';
@@ -28,4 +29,11 @@
 body {
     max-width: 1920px !important;
     margin: auto !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
 }

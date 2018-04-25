@@ -31,3 +31,21 @@ $head-text-color:#00a7ff;
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    #features {
+        .features__head-text {
+            h2 {
+                font-size: 22px;
+            }
+        }
+        .features__item {
+            .features__item__img {
+                min-height: unset;
+                img {
+                    max-width: 100px;
+                }
+            }
+        }
+    }
+}

@@ -27,6 +27,11 @@
         box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
         border: 1px solid #efeded;
         margin-top: 75px;
+        min-height: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         .js-hover {
             &:hover {
                 color: #fff;
@@ -36,7 +41,7 @@
         }
         h4 {
             font-family: 'Museo0'; // Sans Cyrl -300
-            font-size: 21px;
+            font-size: 18px;
             color: #000;
             letter-spacing: -0.84px;
             margin-bottom: 0;
@@ -62,14 +67,51 @@
         a {
             @include gradient-btn-animation;
             font-family: "Museo1";
-            font-size: 20px;
+            font-size: 17px;
             letter-spacing: -0.8px;
             color: #e2e1e1;
             border-radius: 35px;
             display: flex;
             align-items: center;
+            justify-content: center;
             img {
-                padding-left: 5px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    #general-services {
+        .services__title-text {
+            h4 {
+                font-size: 28px;
+            }
+        }
+        .service__item {
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #general-services {
+        .services__title-text {
+            h4 {
+                font-size: 28px;
+                text-align: center;
+                &:before {
+                    left: 23%;
+                }
+            }
+        }
+        .service__item {
+            h4 {
+                font-size: 16px;
+                padding-left: 30px;
+                padding-right: 30px;
             }
         }
     }

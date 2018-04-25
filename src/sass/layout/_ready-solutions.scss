@@ -37,7 +37,7 @@
             font-family: 'Open Sans', sans-serif;
             color: #fff;
             font-size: 21px;
-            font-weight: bold;
+            font-weight: 500;
             line-height: 21px;
             letter-spacing: -0.84px;
             padding-left: 18px;
@@ -55,7 +55,7 @@
                 background-color: #eae8e8;
                 color: #000;
                 position: absolute;
-                right: 0;
+                right: 10%;
                 top: 0;
                 max-width: 115px;
                 padding: 15px 0px;
@@ -66,6 +66,57 @@
             input[type=text] {
                 max-width: 312px;
                 padding: 15px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #ready-solutions {
+        .get-question {
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #ready-solutions {
+        .get-question {
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+            form {
+                padding-top: 10px;
+                input[type=submit] {
+                    top: 10px;
+                    right: 17%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #ready-solutions {
+        .solutions__list {
+            h5 {
+                text-align: center;
+            }
+        }
+        .get-question {
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+            form {
+                padding-top: 10px;
+                input[type=submit] {
+                    top: 10px;
+                    right: 2%;
+                }
             }
         }
     }

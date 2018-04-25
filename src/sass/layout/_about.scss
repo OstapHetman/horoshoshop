@@ -3,8 +3,8 @@ $bg-color: #f9f9f9;
 #about {
     margin-top: 85px;
     background-color: $bg-color;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     .about__left {
         a {
             font-family: 'Museo1';
@@ -18,7 +18,6 @@ $bg-color: #f9f9f9;
     .about__right {
         font-family: 'Open Sans', sans-serif;
         color: #000;
-        padding-top: 35px;
         h3,
         h4 {
             font-weight: 400;
@@ -40,6 +39,36 @@ $bg-color: #f9f9f9;
         ul {
             li {
                 font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #about {
+        .about__left {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #about {
+        .about__left {
+            a {
+                font-size: 14px;
+            }
+        }
+        .about__left__img {
+            max-width: 60%;
+            margin: auto;
+        }
+        .about__right {
+            h3,
+            h4 {
+                text-align: center;
             }
         }
     }

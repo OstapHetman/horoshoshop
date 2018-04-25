@@ -5,6 +5,12 @@ nav.navbar {
     padding-top: 14.5px;
     padding-bottom: 14.5px;
     background-color: #fff;
+    .navbar-toggler {
+        i.fa {
+            color: $brand-color;
+            font-size: 28px;
+        }
+    }
     .navbar-brand {
         color: $brand-color;
         font-size: 31px;
@@ -32,6 +38,67 @@ nav.navbar {
                 font-size: 16px;
                 font-family: 'Museo1';
                 font-weight: 400;
+            }
+            .hover-underline-animation {
+                display: inline-block;
+                position: relative;
+                padding-bottom: 0;
+            }
+            .hover-underline-animation::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            .hover-underline-animation:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    nav.navbar {
+        .navbar-brand {
+            font-size: 28px;
+        }
+        ul.navbar-nav li a {
+            font-size: 14px;
+        }
+        .nav__get-call {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a.get-call {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav.navbar ul.navbar-nav li .hover-underline-animation {
+        display: block;
+    }
+    nav.navbar {
+        ul.navbar-nav li a {
+            text-align: center;
+        }
+        .nav__get-call {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a.get-call {
+                margin: 0;
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
     }

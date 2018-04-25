@@ -61,3 +61,17 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    main {
+        .our-blog__text {
+            h4 {
+                font-size: 30px;
+                text-align: center;
+                &:before {
+                    left: 38%;
+                }
+            }
+        }
+    }
+}

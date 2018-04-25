@@ -41,3 +41,72 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    #get-call-line {
+        .main-text {
+            text-align: center;
+            h4 {
+                font-size: 14px;
+            }
+        }
+        .call-text {
+            text-align: center;
+            &:before {
+                display: none;
+            }
+            a {
+                font-size: 20px;
+            }
+        }
+        .btn-block {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    #get-call-line {
+        .main-text {
+            text-align: center;
+            h4 {
+                font-size: 16px;
+            }
+        }
+        .call-text {
+            text-align: center;
+            &:before {
+                display: none;
+            }
+            a {
+                font-size: 22px;
+            }
+        }
+        .btn-block {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #get-call-line {
+        .main-text {
+            text-align: center;
+            h4 {
+                font-size: 16px;
+            }
+        }
+        .call-text {
+            text-align: center;
+            &:before {
+                display: none;
+            }
+            a {
+                font-size: 22px;
+            }
+        }
+        .btn-block {
+            margin-top: 15px;
+        }
+    }
+}

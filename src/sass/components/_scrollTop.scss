@@ -8,7 +8,7 @@
     .scroll {
         position: absolute;
         right: 20px;
-        bottom: 20px;
+        bottom: 50px;
         background: #019aeb;
         padding: 5px 10px 5px 10px;
         text-align: center;
@@ -32,6 +32,14 @@
             -moz-transition: 0.5s;
             -webkit-transition: 0.5s;
             -o-transition: 0.5s;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .scrolltop {
+        .scroll {
+            bottom: 100px;
         }
     }
 }

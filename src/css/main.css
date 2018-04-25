@@ -65,7 +65,7 @@
   .scrolltop .scroll {
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 50px;
     background: #019aeb;
     padding: 5px 10px 5px 10px;
     text-align: center;
@@ -89,11 +89,150 @@
       -webkit-transition: 0.5s;
       -o-transition: 0.5s; }
 
+@media screen and (max-width: 575px) {
+  .scrolltop .scroll {
+    bottom: 100px; } }
+
+@media screen and (min-width: 576px) {
+  .modal {
+    text-align: center;
+    padding: 0 !important; }
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; } }
+
+.mainModals .modal-dialog {
+  font-family: "Museo3";
+  border: 12px #1498dd solid;
+  border-radius: unset; }
+  .mainModals .modal-dialog .modal-content {
+    border: unset;
+    border-radius: unset; }
+    .mainModals .modal-dialog .modal-content .modal-header {
+      padding-bottom: 0;
+      border: unset; }
+      .mainModals .modal-dialog .modal-content .modal-header button.close {
+        opacity: 1; }
+        .mainModals .modal-dialog .modal-content .modal-header button.close span {
+          color: #1498dd;
+          font-size: 1.625em; }
+    .mainModals .modal-dialog .modal-content .modal-body h1 {
+      font-size: 1.5em;
+      color: #1498dd; }
+    .mainModals .modal-dialog .modal-content .modal-body p {
+      font-size: 0.875em;
+      color: #000; }
+    .mainModals .modal-dialog .modal-content .modal-body form {
+      margin-top: 25px; }
+      .mainModals .modal-dialog .modal-content .modal-body form .footer-btn {
+        margin-bottom: 45px; }
+        .mainModals .modal-dialog .modal-content .modal-body form .footer-btn button {
+          width: 295px;
+          font-family: "Open Sans", sans-serif;
+          background: #3c7ac2;
+          background: linear-gradient(to right, #109de1, #3c7ac2);
+          color: #fff;
+          font-size: 14px;
+          border-radius: 5px;
+          border: unset;
+          background-size: 400% 400%;
+          -webkit-animation: Gradient 3s ease infinite;
+          -moz-animation: Gradient 3s ease infinite;
+          animation: Gradient 3s ease infinite;
+          font-family: 'Museo1';
+          font-size: 18px;
+          border-radius: 35px; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+      .mainModals .modal-dialog .modal-content .modal-body form textarea {
+        resize: none;
+        display: block; }
+      .mainModals .modal-dialog .modal-content .modal-body form input,
+      .mainModals .modal-dialog .modal-content .modal-body form textarea {
+        background-color: #f1f1f1;
+        border: unset;
+        border-radius: 30px;
+        padding: 12px 35px;
+        margin-top: 30px;
+        max-width: 305px;
+        margin: 0 auto; }
+        .mainModals .modal-dialog .modal-content .modal-body form input::-webkit-input-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          font-family: "Museo0";
+          color: #999898;
+          font-size: 0.9375em; }
+        .mainModals .modal-dialog .modal-content .modal-body form input::-moz-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea::-moz-placeholder {
+          /* Firefox 19+ */
+          font-family: "Museo0";
+          color: #999898;
+          font-size: 0.9375em; }
+        .mainModals .modal-dialog .modal-content .modal-body form input:-ms-input-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea:-ms-input-placeholder {
+          /* IE 10+ */
+          font-family: "Museo0";
+          color: #999898;
+          font-size: 0.9375em; }
+        .mainModals .modal-dialog .modal-content .modal-body form input:-moz-placeholder,
+        .mainModals .modal-dialog .modal-content .modal-body form textarea:-moz-placeholder {
+          /* Firefox 18- */
+          font-family: "Museo0";
+          color: #999898;
+          font-size: 0.9375em; }
+
+@media screen and (max-width: 575px) {
+  .mainModals {
+    top: 8%; }
+    .mainModals .modal-dialog {
+      border: unset; }
+      .mainModals .modal-dialog .modal-content .modal-body h1 {
+        font-size: 1.125em; }
+      .mainModals .modal-dialog .modal-content .modal-body p {
+        font-size: 0.6875em; }
+      .mainModals .modal-dialog .modal-content .modal-body form .footer-btn button {
+        width: unset;
+        font-size: 15px; }
+      .mainModals .modal-dialog .modal-content .modal-body form input {
+        max-width: unset; } }
+
 nav.navbar {
   box-shadow: 0 5px 5px -5px #eeebeb;
   padding-top: 14.5px;
   padding-bottom: 14.5px;
   background-color: #fff; }
+  nav.navbar .navbar-toggler i.fa {
+    color: #1498dd;
+    font-size: 28px; }
   nav.navbar .navbar-brand {
     color: #1498dd;
     font-size: 31px;
@@ -113,6 +252,50 @@ nav.navbar {
     font-size: 16px;
     font-family: 'Museo1';
     font-weight: 400; }
+  nav.navbar ul.navbar-nav li .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0; }
+  nav.navbar ul.navbar-nav li .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out; }
+  nav.navbar ul.navbar-nav li .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left; }
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  nav.navbar .navbar-brand {
+    font-size: 28px; }
+  nav.navbar ul.navbar-nav li a {
+    font-size: 14px; }
+  nav.navbar .nav__get-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    nav.navbar .nav__get-call a.get-call {
+      margin: 0; } }
+
+@media screen and (max-width: 767px) {
+  nav.navbar ul.navbar-nav li .hover-underline-animation {
+    display: block; }
+  nav.navbar ul.navbar-nav li a {
+    text-align: center; }
+  nav.navbar .nav__get-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    nav.navbar .nav__get-call a.get-call {
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 header {
   margin-top: 85px;
@@ -125,7 +308,7 @@ header {
     top: 0;
     right: 0; }
   header .header__showcase-text {
-    padding-top: 160px; }
+    padding-top: 110px; }
     header .header__showcase-text h1 {
       color: #00a7ff;
       font-family: 'Museo2';
@@ -183,7 +366,50 @@ header {
   100% {
     background-position: 0% 50%; } }
   header .header__img {
-    padding-top: 130px; }
+    padding-top: 80px; }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header .header__img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    header .header__img img {
+      max-width: 80%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header .header__showcase-text {
+    padding-top: 60px; }
+  header .header__img {
+    display: none; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header .header__showcase-text {
+    padding-top: 60px; }
+    header .header__showcase-text h1 {
+      font-size: 36px;
+      text-align: center; }
+    header .header__showcase-text a {
+      font-size: 16px;
+      margin: auto;
+      display: block; }
+  header .header__img {
+    display: none; } }
+
+@media screen and (max-width: 575px) {
+  header .header__showcase-text {
+    padding-top: 60px; }
+    header .header__showcase-text h1 {
+      font-size: 26px;
+      text-align: center; }
+    header .header__showcase-text p {
+      font-size: 14px;
+      text-align: center; }
+    header .header__showcase-text a {
+      font-size: 12px;
+      margin: auto;
+      display: block; }
+  header .header__img {
+    display: none; } }
 
 #features {
   margin-top: 125px; }
@@ -211,11 +437,19 @@ header {
       display: block;
       margin: auto; }
 
+@media screen and (max-width: 575px) {
+  #features .features__head-text h2 {
+    font-size: 22px; }
+  #features .features__item .features__item__img {
+    min-height: unset; }
+    #features .features__item .features__item__img img {
+      max-width: 100px; } }
+
 #about {
   margin-top: 85px;
   background-color: #f9f9f9;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 35px;
+  padding-bottom: 35px; }
   #about .about__left a {
     font-family: 'Museo1';
     font-size: 22px;
@@ -225,8 +459,7 @@ header {
     text-decoration: underline; }
   #about .about__right {
     font-family: 'Open Sans', sans-serif;
-    color: #000;
-    padding-top: 35px; }
+    color: #000; }
     #about .about__right h3,
     #about .about__right h4 {
       font-weight: 400;
@@ -243,6 +476,20 @@ header {
       margin-bottom: 0; }
     #about .about__right ul li {
       font-weight: bold; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #about .about__left a {
+    font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  #about .about__left a {
+    font-size: 14px; }
+  #about .about__left__img {
+    max-width: 60%;
+    margin: auto; }
+  #about .about__right h3,
+  #about .about__right h4 {
+    text-align: center; } }
 
 #get-call-line {
   padding-top: 36.5px;
@@ -311,6 +558,48 @@ header {
   100% {
     background-position: 0% 50%; } }
 
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #get-call-line .main-text {
+    text-align: center; }
+    #get-call-line .main-text h4 {
+      font-size: 14px; }
+  #get-call-line .call-text {
+    text-align: center; }
+    #get-call-line .call-text:before {
+      display: none; }
+    #get-call-line .call-text a {
+      font-size: 20px; }
+  #get-call-line .btn-block {
+    margin-top: 15px; } }
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  #get-call-line .main-text {
+    text-align: center; }
+    #get-call-line .main-text h4 {
+      font-size: 16px; }
+  #get-call-line .call-text {
+    text-align: center; }
+    #get-call-line .call-text:before {
+      display: none; }
+    #get-call-line .call-text a {
+      font-size: 22px; }
+  #get-call-line .btn-block {
+    margin-top: 15px; } }
+
+@media screen and (max-width: 575px) {
+  #get-call-line .main-text {
+    text-align: center; }
+    #get-call-line .main-text h4 {
+      font-size: 16px; }
+  #get-call-line .call-text {
+    text-align: center; }
+    #get-call-line .call-text:before {
+      display: none; }
+    #get-call-line .call-text a {
+      font-size: 22px; }
+  #get-call-line .btn-block {
+    margin-top: 15px; } }
+
 #general-services {
   padding-top: 95px;
   background-color: #f9f9f9; }
@@ -334,14 +623,19 @@ header {
     max-width: 260px;
     box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
     border: 1px solid #efeded;
-    margin-top: 75px; }
+    margin-top: 75px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     #general-services .service__item .js-hover:hover {
       color: #fff;
       border-radius: 28px;
       background-color: #00a7ff; }
     #general-services .service__item h4 {
       font-family: 'Museo0';
-      font-size: 21px;
+      font-size: 18px;
       color: #000;
       letter-spacing: -0.84px;
       margin-bottom: 0;
@@ -372,12 +666,13 @@ header {
       -moz-animation: Gradient 3s ease infinite;
       animation: Gradient 3s ease infinite;
       font-family: "Museo1";
-      font-size: 20px;
+      font-size: 17px;
       letter-spacing: -0.8px;
       color: #e2e1e1;
       border-radius: 35px;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
 
 @-webkit-keyframes Gradient {
   0% {
@@ -403,7 +698,24 @@ header {
   100% {
     background-position: 0% 50%; } }
       #general-services .service__more-btn a img {
-        padding-left: 5px; }
+        padding-left: 10px; }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #general-services .services__title-text h4 {
+    font-size: 28px; }
+  #general-services .service__item h4 {
+    font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  #general-services .services__title-text h4 {
+    font-size: 28px;
+    text-align: center; }
+    #general-services .services__title-text h4:before {
+      left: 23%; }
+  #general-services .service__item h4 {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 #services-for-clients {
   padding-top: 95px;
@@ -428,14 +740,19 @@ header {
     max-width: 260px;
     box-shadow: 1px 2px 6px 1px rgba(202, 200, 200, 0.54);
     border: 1px solid #efeded;
-    margin-top: 75px; }
+    margin-top: 75px;
+    min-height: 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     #services-for-clients .service__item .js-hover:hover {
       color: #fff;
       border-radius: 28px;
       background-color: #00a7ff; }
     #services-for-clients .service__item h4 {
       font-family: 'Museo0';
-      font-size: 21px;
+      font-size: 18px;
       color: #000;
       letter-spacing: -0.84px;
       margin-bottom: 0;
@@ -467,12 +784,13 @@ header {
       -moz-animation: Gradient 3s ease infinite;
       animation: Gradient 3s ease infinite;
       font-family: "Museo1";
-      font-size: 20px;
+      font-size: 17px;
       letter-spacing: -0.8px;
       color: #e2e1e1;
       border-radius: 35px;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
 
 @-webkit-keyframes Gradient {
   0% {
@@ -498,7 +816,26 @@ header {
   100% {
     background-position: 0% 50%; } }
       #services-for-clients .service__more-btn a img {
-        padding-left: 5px; }
+        padding-left: 10px; }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #services-for-clients .services__title-text h4 {
+    font-size: 28px; }
+  #services-for-clients .service__item h4 {
+    font-size: 16px; } }
+
+@media screen and (max-width: 575px) {
+  #services-for-clients .services__title-text h4 {
+    font-size: 28px;
+    text-align: center; }
+    #services-for-clients .services__title-text h4:before {
+      left: 2%; }
+  #services-for-clients .service__item {
+    min-height: unset; }
+    #services-for-clients .service__item h4 {
+      font-size: 16px;
+      padding-left: 30px;
+      padding-right: 30px; } }
 
 #ready-solutions {
   padding-top: 53px;
@@ -531,7 +868,7 @@ header {
       font-family: 'Open Sans', sans-serif;
       color: #fff;
       font-size: 21px;
-      font-weight: bold;
+      font-weight: 500;
       line-height: 21px;
       letter-spacing: -0.84px;
       padding-left: 18px; }
@@ -547,7 +884,7 @@ header {
         background-color: #eae8e8;
         color: #000;
         position: absolute;
-        right: 0;
+        right: 10%;
         top: 0;
         max-width: 115px;
         padding: 15px 0px; }
@@ -556,6 +893,32 @@ header {
       #ready-solutions .get-question form input[type=text] {
         max-width: 312px;
         padding: 15px 20px; }
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  #ready-solutions .get-question p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  #ready-solutions .get-question p {
+    font-size: 15px;
+    text-align: center; }
+  #ready-solutions .get-question form {
+    padding-top: 10px; }
+    #ready-solutions .get-question form input[type=submit] {
+      top: 10px;
+      right: 17%; } }
+
+@media screen and (max-width: 575px) {
+  #ready-solutions .solutions__list h5 {
+    text-align: center; }
+  #ready-solutions .get-question p {
+    font-size: 14px;
+    text-align: center; }
+  #ready-solutions .get-question form {
+    padding-top: 10px; }
+    #ready-solutions .get-question form input[type=submit] {
+      top: 10px;
+      right: 2%; } }
 
 #our-blog .our-blog__text {
   margin-top: 85px; }
@@ -594,6 +957,17 @@ header {
   margin-top: 60px;
   margin-bottom: 60px; }
   #our-blog .go-to-blog-btn a {
+    font-family: "Open Sans", sans-serif;
+    background: #3c7ac2;
+    background: linear-gradient(to right, #109de1, #3c7ac2);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: unset;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 3s ease infinite;
+    -moz-animation: Gradient 3s ease infinite;
+    animation: Gradient 3s ease infinite;
     color: #ffffff;
     font-family: "Museo1";
     font-size: 21px;
@@ -601,6 +975,37 @@ header {
     letter-spacing: -1px;
     border-radius: 28px;
     background-color: #00a7ff; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@media screen and (max-width: 575px) {
+  #our-blog .our-blog__text h4 {
+    font-size: 28px;
+    text-align: center; }
+    #our-blog .our-blog__text h4:before {
+      left: 30%; } }
 
 footer {
   background-image: url(../img/footer-bg.png);
@@ -649,34 +1054,125 @@ footer {
     font-size: 26px;
     font-weight: 400;
     letter-spacing: -1.04px; }
-  footer .footer__item .links ul li a {
-    font-family: 'Museo1';
-    color: #000000;
-    font-size: 23px;
-    font-weight: 400;
-    letter-spacing: -0.92px; }
+  footer .footer__item .links ul li {
+    display: flex;
+    justify-content: flex-start; }
+    footer .footer__item .links ul li a {
+      font-family: 'Museo1';
+      color: #000000;
+      font-size: 23px;
+      font-weight: 400;
+      letter-spacing: -0.92px; }
+      footer .footer__item .links ul li a:hover {
+        text-decoration: unset; }
+    footer .footer__item .links ul li .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 0; }
+    footer .footer__item .links ul li .hover-underline-animation::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      transform-origin: bottom right;
+      transition: transform 0.5s ease-out; }
+    footer .footer__item .links ul li .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left; }
   footer .footer__item .feedback a:first-child {
+    font-family: "Open Sans", sans-serif;
+    background: #3c7ac2;
+    background: linear-gradient(to right, #109de1, #3c7ac2);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: unset;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 3s ease infinite;
+    -moz-animation: Gradient 3s ease infinite;
+    animation: Gradient 3s ease infinite;
     border-radius: 28px;
     color: #fff;
     font-family: "Museo1";
     font-size: 21px;
     font-weight: 400;
     letter-spacing: -1px;
-    background-color: #0476b3;
     max-width: 215px;
     padding-top: 10px;
     padding-bottom: 10px; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
   footer .footer__item .feedback a:last-child {
+    font-family: "Open Sans", sans-serif;
+    background: #3c7ac2;
+    background: linear-gradient(to right, #109de1, #3c7ac2);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: unset;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 3s ease infinite;
+    -moz-animation: Gradient 3s ease infinite;
+    animation: Gradient 3s ease infinite;
     border-radius: 28px;
     color: #fff;
     font-family: "Museo1";
     font-size: 21px;
     font-weight: 400;
     letter-spacing: -1px;
-    background-color: #019aeb;
     margin-top: 25px;
     padding-top: 10px;
     padding-bottom: 10px; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
   footer .footer__bottom-part {
     padding-top: 25px; }
     footer .footer__bottom-part p {
@@ -685,6 +1181,38 @@ footer {
       font-size: 18px;
       font-weight: 400;
       letter-spacing: -0.92px; }
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  footer .footer__item .footer__item__icons img {
+    max-width: 30px; }
+  footer .footer__item .footer__item__phones a {
+    font-size: 18px; }
+  footer .footer__item .footer__item__location p {
+    font-size: 18px; }
+  footer .footer__item.footer__item__links-col .links:before {
+    display: none; }
+  footer .footer__item.footer__item__links-col .links:after {
+    display: none; }
+  footer .footer__item .links ul li a {
+    font-size: 15px; }
+  footer .footer__bottom-part p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 575px) {
+  footer .footer__item .footer__item__icons img {
+    max-width: 50px; }
+  footer .footer__item .footer__item__phones a {
+    font-size: 18px; }
+  footer .footer__item .footer__item__location p {
+    font-size: 18px; }
+  footer .footer__item.footer__item__links-col .links:before {
+    display: none; }
+  footer .footer__item.footer__item__links-col .links:after {
+    display: none; }
+  footer .footer__item .links ul li a {
+    font-size: 18px; }
+  footer .footer__bottom-part p {
+    font-size: 12px; } }
 
 main {
   margin-top: 85px;
@@ -729,6 +1257,19 @@ main {
     main .pagination li a.active {
       text-decoration: underline; }
 
+@media screen and (max-width: 575px) {
+  main .our-blog__text h4 {
+    font-size: 30px;
+    text-align: center; }
+    main .our-blog__text h4:before {
+      left: 38%; } }
+
 body {
   max-width: 1920px !important;
   margin: auto !important; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */ }

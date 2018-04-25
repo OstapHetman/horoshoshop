@@ -27,26 +27,26 @@
 
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Go In Lab</a>
+            <a class="navbar-brand" href="index.html">GoInLab</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="pl-3 navbar-nav mr-auto">
+                <ul class="pl-md-3 pl-lg-3 pl-xl-3 navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Главная</a>
+                        <a class="nav-link hover-underline-animation smooth" href="index.html#header">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Команда</a>
+                        <a class="nav-link hover-underline-animation smooth" href="index.html#about">Команда</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги</a>
+                        <a class="nav-link hover-underline-animation smooth" href="index.html#general-services">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Блог</a>
+                        <a class="nav-link hover-underline-animation" href="blog.html" target="_blank">Блог</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                        <a class="nav-link hover-underline-animation smooth" href="index.html#footer">Контакты</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto nav__get-call">
@@ -54,12 +54,14 @@
                         <a class="nav-link phone-number d-flex align-items-center" href="tel:+38 (067) 637-03-27"><img src="img/phone-icon.png" alt="Phone">+38 (067) 637-03-27</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn nav-link get-call" href="#">Заказать дзвонок</a>
+                        <a class="btn nav-link get-call" href="#">Заказать звонок</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- End Fixed Navbar -->
 
     <!-- Start Main -->
     <main role="main">
@@ -153,9 +155,9 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-3 mx-auto">
-                    <nav class="mx-auto">
-                        <ul class="pagination">
+                <div class="col-12 col-lg-3 col-xl-3 mx-auto">
+                    <nav>
+                        <ul class="pagination d-flex justify-content-center">
                             <li class="page-item"><a class="page-link" href="#"><i class="fa fa-arrow-left"></i></a></li>
                             <li class="page-item"><a class="page-link active" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -190,10 +192,10 @@
     </section>
     <!-- End Section: Get call Line -->
     <!-- Start Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 footer__item">
+                <div class="col-sm-6 col-md-6 col-lg-4 footer__item">
                     <div class="text-center">
                         <h4>Свяжитесь с нами прямо сейчас</h4>
                         <div class="footer__item__icons ">
@@ -224,14 +226,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 footer__item footer__item__links-col">
+                <div class="col-sm-6 col-md-6 col-lg-4 footer__item footer__item__links-col">
                     <div class="links d-flex justify-content-center">
                         <ul class="list-unstyled">
-                            <li><a class="d-block" href="#">- Главная</a></li>
-                            <li><a class="d-block" href="#">- Команда</a></li>
-                            <li><a class="d-block" href="#">- Услуги</a></li>
-                            <li><a class="d-block" href="#">- Блог</a></li>
-                            <li><a class="d-block" href="#">- Контакты</a></li>
+                            <li><a class="d-block hover-underline-animation" href="index.html">- Главная</a></li>
+                            <li><a class="d-block hover-underline-animation" href="index.html#about">- Команда</a></li>
+                            <li><a class="d-block hover-underline-animation" href="index.html#general-services">- Услуги</a></li>
+                            <li><a class="d-block hover-underline-animation" href="blog.html" target="_blank">- Блог</a></li>
+                            <li><a class="d-block hover-underline-animation" href="index.html#footer">- Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -253,7 +255,6 @@
     <!-- End Footer -->
 
 
-
     <!-- START SCROLL TOP BTN -->
     <div class='scrolltop'>
         <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
@@ -269,6 +270,33 @@
     <script>
         new WOW().init();
     </script>
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+        (function() {
+            var widget_id = 'Tl3mps0krd';
+            var d = document;
+            var w = window;
+
+            function l() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                var ss = document.getElementsByTagName('script')[0];
+                ss.parentNode.insertBefore(s, ss);
+            }
+            if (d.readyState == 'complete') {
+                l();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+    </script>
+    <!-- {/literal} END JIVOSITE CODE -->
     <!-- Main JavaScript File -->
     <script src="js/main.js"></script>
 </body>
